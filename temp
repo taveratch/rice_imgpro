@@ -1,4 +1,0 @@
-if D07_x >= inputs_x :
-    per07_x = ( inputs_x * 50 ) / D07_x
-else:
-    per07_x = ( D07_x * 50 ) / inputs_x
