@@ -1,0 +1,39 @@
+<!-- login.html -->
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Kundjanasith Thonglek [ Rice Image Processing]{% endblock %}
+{% block head %}Diagnosis{% endblock %}
+{% block content %}
+    
+      <br></br>
+      <img style="width: 100%;" src="{% static "" %}{{f}}" alt="My Image"></img>
+      <h1>Processing . . . </h1>
+      <br></br>
+      <img style="width: 100%;" src="{% static "" %}{{l}}" alt="My Image"></img>
+      <!--<h2>{{s}}</h2>-->
+      <br></br>
+      <!--{% for post in s %}
+      <div>
+            <p>Disease : {{post.X_1}} Percentage : {{post.X_2}} %</p>
+      </div>
+      {% endfor %}-->
+        <form action="{% url "list" %}" method="post" enctype="multipart/form-data">
+
+           <div>
+      <table style="margin: 0px auto;">
+            <tr>
+                  <th>Disease</th>
+                  <th>Percentage (%)</th>
+            </tr>
+      {% for i in s%}
+            <tr>
+                  <td>{{i.X_1}}</td>
+                  <td>{{i.X_2}}</td>
+            </tr>
+      {% endfor %}
+      </table>
+      </div>
+      </form> 
+      
+
+{% endblock %}

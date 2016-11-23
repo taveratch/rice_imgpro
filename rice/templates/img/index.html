@@ -1,0 +1,57 @@
+<!-- login.html -->
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Kundjanasith Thonglek [ Rice Image Processing]{% endblock %}
+{% block head %}Rice{% endblock %}
+{% block content %}
+    <!--<form>
+        <input type="text" placeholder="Username" name="username" id="u">
+        <input type="password" placeholder="Password" name="password" id="p">
+        <button onclick="log()">Login</button>
+        <script>
+        function log(){
+          var u = document.getElementById("u")
+          var p = document.getElementById("p")
+          console.log(u.value)
+          console.log(p.value)
+          if(u.value=="admin"&&p.value=="kundjanasith"){
+            console.log("OK")
+            window.location="http://localhost:8000/api/home"
+          }
+          else{
+            alert("Access Denied ! ! !")
+          }
+        }
+        </script>
+    </form>-->
+      <form action="{% url "list" %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p>{{ form.non_field_errors }}</p>
+
+            <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+
+            <p>
+                {{ form.docfile.errors }}
+                {{ form.docfile }}
+            </p>
+           <p><input type="submit" value="Upload"/></p> 
+      </form> 
+      <!--<button src="localhost:8000/dia">Ds</button>-->
+      <!--<img src="{% static "" %}{{f}}" alt="My Image"></img>-->
+
+      <!--<button>Go</button>-->
+
+      <!--<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p>{{ form.non_field_errors }}</p>
+
+            <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+
+            <p>
+                {{ form.docfile.errors }}
+                {{ form.docfile }}
+            </p>
+           <p><input type="submit" value="Upload"></p> 
+      </form> -->
+
+{% endblock %}
