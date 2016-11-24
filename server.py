@@ -1,7 +1,8 @@
 from flask import request, Flask
 from flask.ext.cors import CORS
 from werkzeug.utils import secure_filename
-import subprocess
+from pprint import pprint
+import subprocess, json
 app = Flask(__name__)
 CORS(app)
 @app.route('/upload', methods=['POST'])
@@ -15,4 +16,9 @@ def upload():
         pass
     subprocess.call("python analyse.py result/1.txt result/2.txt", shell=True)
     subprocess.call("python cat.py result/2.txt", shell=True)
-    return 'hello'
+
+    with open('result/api_result.txt') as data_file:
+        data = json.load(data_file)
+
+    pprint(data)
+    return json.dumps(data)

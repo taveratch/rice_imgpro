@@ -4136,10 +4136,35 @@ file = open('result/api_result.txt','r+')
 file.seek(0)
 file.truncate()
 
-for i in map_x:
-    y = str(i)+''
-    file.write(y+"\n")
+sol = "[ \n"
+sol = sol + "{ \"name\": \"bacterial_blight\"  , \"percentage\": " + str(res_01) + " }, \n"
+sol = sol + "{ \"name\": \"bacterial_leaf_streak\" , \"percentage\": " + str(res_02) + " }, \n"
+sol = sol + "{ \"name\": \"bacterial_sheath_brown_rot\" , \"percentage\": " + str(res_03) + " }, \n"
+sol = sol + "{ \"name\": \"bakanae\" , \"percentage\": " + str(res_04) + " }, \n"
+sol = sol + "{ \"name\": \"blast_leaft_and_collar\" , \"percentage\": " + str(res_05) + " }, \n"
+sol = sol + "{ \"name\": \"blast_node_and_neck\" , \"percentage\": " + str(res_06) + " }, \n"
+sol = sol + "{ \"name\": \"brown_spot\" , \"percentage\": " + str(res_07) + " }, \n"
+sol = sol + "{ \"name\": \"false_smut\" , \"percentage\": " + str(res_08) + " }, \n"
+sol = sol + "{ \"name\": \"leaf_scald\" , \"percentage\": " + str(res_09) + " }, \n"
+sol = sol + "{ \"name\": \"narrow_brown_spot\" , \"percentage\": " + str(res_10) + " }, \n"
+sol = sol + "{ \"name\": \"red_stripe\" , \"percentage\": " + str(res_11) + " }, \n"
+sol = sol + "{ \"name\": \"rice_grassy_stunt\" , \"percentage\": " + str(res_12) + " }, \n"
+sol = sol + "{ \"name\": \"rice_ragged_stunt\" , \"percentage\": " + str(res_13) + " }, \n"
+sol = sol + "{ \"name\": \"rice_stripe_virus_disease\" , \"percentage\": " + str(res_14) + " }, \n"
+sol = sol + "{ \"name\": \"rice_yellow_mottle_virus\" , \"percentage\": " + str(res_15) + " }, \n"
+sol = sol + "{ \"name\": \"sheath_blight\" , \"percentage\": " + str(res_16) + " }, \n"
+sol = sol + "{ \"name\": \"sheath_rot\" , \"percentage\": " + str(res_17) + " }, \n"
+sol = sol + "{ \"name\": \"stem_rot\" , \"percentage\": " + str(res_18) + " }, \n"
+sol = sol + "{ \"name\": \"tungroc\" , \"percentage\": " +str(res_19) + " } \n"
+sol = sol + " ]\n"
+
+file.write(sol)
 file.close()
+
+# for i in map_x:
+#     y = str(i)+''
+#     file.write(y+"\n")
+# file.close()
 
 print '====================Result======================='
 # print map_x

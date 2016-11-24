@@ -1,19 +1,21 @@
-('[ 10 ] Narrow brown spot : ', 52.08059296377492)
-('[ 11 ] Red stripe : ', 50.90171207850507)
-('[ 08 ] False smut : ', 48.77675122664161)
-('[ 02 ] Bacterial leaf streak : ', 35.694462598224014)
-('[ 03 ] Bacterial sheath brown rot : ', 32.739325608101055)
-('[ 06 ] Blast node and neck : ', 32.70122142186032)
-('[ 17 ] Sheath rot : ', 30.621933395970352)
-('[ 15 ] Rice yellow mottle virus : ', 28.671957236842104)
-('[ 07 ] Brown spot : ', 28.05903538991544)
-('[ 09 ] Leaf scald : ', 27.56524689424783)
-('[ 05 ] Blast leaft and collar : ', 26.74673764004301)
-('[ 14 ] Rice stripe virus disease : ', 26.492848940390438)
-('[ 01 ] Bacterial blight : ', 26.202472896927954)
-('[ 13 ] Rice ragged stunt : ', 24.899780770435328)
-('[ 19 ] Tungroc : ', 20.958868357866166)
-('[ 12 ] Rice grassy stunt : ', 20.0)
-('[ 18 ] Stem rot : ', 20.0)
-('[ 04 ] Bakanae : ', 20.0)
-('[ 16 ] Sheath blight : ', 20.0)
+[ 
+{ "name": "bacterial_blight"  , "percentage": 26.2024728969 }, 
+{ "name": "bacterial_leaf_streak" , "percentage": 35.6944625982 }, 
+{ "name": "bacterial_sheath_brown_rot" , "percentage": 32.7393256081 }, 
+{ "name": "bakanae" , "percentage": 20.0 }, 
+{ "name": "blast_leaft_and_collar" , "percentage": 26.74673764 }, 
+{ "name": "blast_node_and_neck" , "percentage": 32.7012214219 }, 
+{ "name": "brown_spot" , "percentage": 28.0590353899 }, 
+{ "name": "false_smut" , "percentage": 48.7767512266 }, 
+{ "name": "leaf_scald" , "percentage": 27.5652468942 }, 
+{ "name": "narrow_brown_spot" , "percentage": 52.0805929638 }, 
+{ "name": "red_stripe" , "percentage": 50.9017120785 }, 
+{ "name": "rice_grassy_stunt" , "percentage": 20.0 }, 
+{ "name": "rice_ragged_stunt" , "percentage": 24.8997807704 }, 
+{ "name": "rice_stripe_virus_disease" , "percentage": 26.4928489404 }, 
+{ "name": "rice_yellow_mottle_virus" , "percentage": 28.6719572368 }, 
+{ "name": "sheath_blight" , "percentage": 20.0 }, 
+{ "name": "sheath_rot" , "percentage": 30.621933396 }, 
+{ "name": "stem_rot" , "percentage": 20.0 }, 
+{ "name": "tungroc" , "percentage": 20.9588683579 } 
+ ]
