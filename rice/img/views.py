@@ -35,8 +35,8 @@ def sumY(str):
     return re
 
 def list(request):
-    
-    
+
+
     # Handle file upload
     if request.method == 'POST':
         form = DocumentForm(request.POST, request.FILES)
@@ -68,7 +68,7 @@ def list(request):
             var_5 =  'images/'+result
             print "------------>"+result
             in_put = open('result.txt','r')
-            in_ = in_put.read()  
+            in_ = in_put.read()
             print "AAAAAAAAAAAAAAAA"
             re = sumY(in_)
             re[0].X_1 = "["+re[0].X_1
@@ -76,7 +76,7 @@ def list(request):
                 z.X_1 = z.X_1[6:]
             print re
             print in_
-            print "AAAAAAAAAAAAAAAA"   
+            print "AAAAAAAAAAAAAAAA"
             # Redirect to the document list after POST
             # return HttpResponseRedirect(reverse('list'))
             return render(request,'img/diagnose.html',{'f':result,'l':var_5,'s':re})
@@ -93,7 +93,7 @@ def list(request):
         ind = ind + 1
         if ind == len(documents):
             result = i.docfile.url
-    
+
     print "RR",result
 
     rezult = "{% static \'"+result+"\' %}"
@@ -130,7 +130,7 @@ def list(request):
 #         ind = ind + 1
 #         if ind == len(documents):
 #             result = i.docfile.url
-    
+
 #     print "RR",result
 
 #     rezult = "{% static \'"+result+"\' %}"
