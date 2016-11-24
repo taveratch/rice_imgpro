@@ -4136,7 +4136,7 @@ file = open('result/api_result.txt','r+')
 file.seek(0)
 file.truncate()
 
-for i in map_x: 
+for i in map_x:
     y = str(i)+''
     file.write(y+"\n")
 file.close()

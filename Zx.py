@@ -85,8 +85,8 @@ while(1):
             # blues.append(temp)
 	    write_text(f,cx,cy)
         write_file("BLUE",f,cx,cy)
-    
-    
+
+
     both_green = green(hsv)
     erode_green = cv2.erode(both_green,None,iterations = 3)
     dilate_green = cv2.dilate(erode_green,None,iterations = 10)
@@ -130,7 +130,7 @@ while(1):
             print "Center : (", str((x+w)/2) , "," , str((y+h)/2) , ")"
 	    write_text(f,cx,cy)
         write_file("RED",f,cx,cy)
-    
+
     both_yellow = yellow(hsv)
     erode_yellow = cv2.erode(both_yellow,None,iterations = 3)
     dilate_yellow = cv2.dilate(erode_yellow,None,iterations = 10)
@@ -144,10 +144,10 @@ while(1):
             print "Center : (", str((x+w)/2) , "," , str((y+h)/2) , ")"
 	    write_text(f,cx,cy)
         write_file("YELLOW",f,cx,cy)
-    
+
     # cv2.imshow('RESULT',f)
 
-    
+
     # if cv2.waitKey(25) == 27:
     #     file.write('Finish\n')
     #     break
@@ -190,5 +190,3 @@ file.write("19 [ Tungroc ] : \n")
 file.close()
 cv2.destroyAllWindows()
 # c.release()
-
-
