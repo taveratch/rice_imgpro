@@ -32,7 +32,7 @@ Knowledge Engineering project
 
   How to run server (node)
   ```
-    cd ajax-upload-file
+    cd frontend-upload-file
     npm install
     npm start
   ```
